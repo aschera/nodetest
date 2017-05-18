@@ -1,17 +1,15 @@
-const makeHTML = require ('../index.js');
+var makeHTML = require('../index.js');
 
-// we will test!
+// här kommer testen
 
-test('makeHTML test empty', () => {
-	let actual = makeHTML('');
-	let expected = makeHTML '<p></p>';
-	expected(actual).toBe(expected);
+describe('makeHTML test suite', () => {
+	test('makeHTML empty string', () => {
+		var actual = makeHTML('');
+		var expected = '<p></p>';
+		expect(actual).toBe(expected);
+	});
+
+	test('makeHTML normal string', () => {
+		expect(makeHTML('yellow')).toBe('<p>yellow</p>');
+	})
 });
-
-
-test('makeHTML test', () => {
-	let actual = makeHTML('yellow');
-	let expected = makeHTML '<p>yellow</p>';
-	expected(actual).toBe(expected);
-});
-

@@ -1,0 +1,19 @@
+{
+  "name": "sun",
+  "version": "1.0.0",
+  "description": "jest",
+  "main": "2ad.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "jest"
+  ],
+  "author": "aschera",
+  "license": "ISC"
+}
